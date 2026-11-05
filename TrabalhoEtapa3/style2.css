@@ -1,0 +1,76 @@
+.conteudo {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.fundo {
+    background-color: rgb(143, 79, 42);
+}
+
+.titulo {
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 40px;
+    background-color: rgb(129, 69, 28);
+    border-radius: 20px;
+    border: 5px solid rgb(209, 98, 34);
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 5px solid rgb(209, 98, 34);
+    background-color: rgb(196, 125, 58);
+}
+
+.programas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 20px; 
+}   
+
+#clipstudio  {
+    background-image: url(imagens/clipstudiopaint.png);
+}
+
+#youtube {
+    background-image: url(imagens/Youtube.jpg);
+}
+
+#pinterest {
+    background-image: url(imagens/Pinterest.png);
+}
+ #youtube, #clipstudio, #pinterest {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+
+.secao-programas h2,   
+.secao-coisas h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    .titulo h1{
+        font-size: 30px;
+    }
+
+    .programas {
+        gap: 65px;
+    }
+
+    .secao-programas h2,
+    .secao-coisas h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+}
